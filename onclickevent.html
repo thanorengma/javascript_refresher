@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>on click event</title>
+</head>
+<body>
+    <p id="first">Hi this is a on click event</p>
+    <button id="change">Change text</button>
+    <script>
+        document.getElementById("change").onclick=function(){
+            document.getElementById("first").innerHTML = "Welcome you have clicked the button.";
+        }
+    </script>
+</body>
+</html>

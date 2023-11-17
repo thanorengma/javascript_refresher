@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Javascript is </p>
+    <p id="emptypara"></p>
+    <button id="emptybutton">Empty para</button>
+    <button id="add">click me</button>
+    <script>
+        document.getElementById("add").onclick = function(){
+            document.getElementById("para").innerHTML = "Hello " +document.getElementById("para").innerHTML + " beautiful";
+        }
+        document.getElementById("emptybutton").onclick = function(){
+            document.getElementById("emptypara").innerHTML = "This content is added on click";
+        }
+
+    </script>
+</body>
+</html>
