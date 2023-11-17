@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For loop</title>
+</head>
+<body>
+    <p id="para1"></p>
+    <script>
+        var tweets = ["Good morning", "Have a nice day", "Bye", "see you"];
+        var j = "";
+        for(var i = 0; i < 4; i++){
+            j = j + " " + tweets[i];
+        }
+        document.getElementById("para1").innerHTML = j;
+    </script>
+</body>
+</html>
