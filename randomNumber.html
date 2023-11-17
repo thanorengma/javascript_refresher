@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random number guessing game</title>
+</head>
+<body>
+    <H1>Basic Number Guessing Game In Javascipt</H1>
+    <p> Kindly, enter any number between 1 to 5.</p>
+    <div text-align
+>
+        <input id="input" type="text">
+        <button id="addbtn">Submit</button>
+    </div>
+    
+    <script>
+        var useranswer = 0;
+        document.getElementById("addbtn").onclick = function(){
+           useranswer = document.getElementById("input").value;
+          var answer = Math.floor(Math.random() * 5) + 1;
+          if(useranswer == answer){
+            alert("User has won the guess.");
+          }
+          else{
+            alert("opps..! Try again!....");
+          }
+        }
+    </script>
+
+</body>
+</html>
